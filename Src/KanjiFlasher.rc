@@ -1,0 +1,344 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese (Japan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\KanjiFlasher.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Book.ico"
+
+IDI_ICON2               ICON                    "res\\icon2.ico"
+
+IDI_PUSHPIN1            ICON                    "res\\icon1.ico"
+
+IDI_PUSHPIN2            ICON                    "res\\icon3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_KanjiFlasherMENU MENU
+BEGIN
+    POPUP "KanjiFlasher"
+    BEGIN
+        MENUITEM "About...",                    ID_KanjiFlasher_ABOUT
+        MENUITEM "Pause",                       ID_PLAYPAUSE
+        MENUITEM "Settings",                    IDSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_KanjiFlasherEXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SKIN_BROWN          BITMAP                  "res\\1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE3               WAVE                    "res\\myfile.wav"
+
+#endif    // Japanese (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GRIP                ICON                    "res\\icon4.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_LIST            BITMAP                  "res\\bitmap5.bmp"
+
+IDB_SKIN_BLUE           BITMAP                  "res\\blue.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 247, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About KanjiFlasher"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,27,20,20
+    LTEXT           "KanjiFlasher Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,190,7,50,14,WS_GROUP
+    LTEXT           "riyas.y@gmail.com",IDC_STATIC,39,40,59,8
+    LTEXT           "All Rights Reserved",IDC_STATIC,39,55,63,8
+END
+
+IDD_KanjiFlasher_DIALOG DIALOGEX 0, 0, 464, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "KanjiFlasher Settings           "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,43,66,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,138,66,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&Serial",IDC_RADIO_SERIAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,124,33,10
+    CONTROL         "&Random",IDC_RADIO_RANDOM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,22,148,43,10
+    PUSHBUTTON      "...",IDC_SEL_KANJI_COLOR,167,116,18,14
+    PUSHBUTTON      "...",IDC_SEL_HIR_COLOR,167,135,18,14
+    PUSHBUTTON      "...",IDC_SEL_ENG_COLOR,167,154,18,14
+    COMBOBOX        IDC_COMBO1,22,199,164,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sound notification between two flash cards",IDC_CHECKAUDIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,236,176,10
+    CONTROL         "Auto resize window according to text",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,249,148,10
+    CONTROL         "",IDC_SLIDER_KAN_HIR_DELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,266,58,62,12
+    CONTROL         "",IDC_SLIDER_HIR_ENG_DELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,328,58,62,12
+    CONTROL         "&Kanji",IDC_CHECKKANJI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,111,39,10
+    CONTROL         "&Hiragana",IDC_CHECKHIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,312,111,39,10
+    CONTROL         "&English",IDC_CHECKENG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,378,111,39,10
+    CONTROL         "",IDC_SLIDER_CARD_DURATION,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,246,164,170,15
+    CONTROL         "Slider1",IDC_SLIDER_TRANSPERANCY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,246,230,170,15
+    DEFPUSHBUTTON   "&OK",IDOK,348,268,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,401,268,50,14
+    LTEXT           "Kanji",IDC_STATIC,101,118,16,8
+    CONTROL         "",IDC_RICHEDIT1,"RichEdit20W",WS_BORDER | 0x880,148,117,18,12
+    CONTROL         "",IDC_DISPLAY_TOTAL,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,22,26,161,8
+    GROUPBOX        "Duration",IDC_STATIC,212,133,240,63
+    LTEXT           "1 sec",IDC_STATIC,223,166,18,8
+    LTEXT           "180 sec",IDC_STATIC,417,166,26,8
+    LTEXT           "How transparent should the flash card be ?",IDC_DISPLAY_TRANSPARENCY,229,214,151,8
+    LTEXT           "Solid",IDC_STATIC,223,233,16,8
+    LTEXT           "Clear",IDC_STATIC,425,233,16,8
+    GROUPBOX        "Transparency",IDC_STATIC,212,199,240,63
+    GROUPBOX        "Font Color  ",IDC_STATIC,90,101,108,76
+    GROUPBOX        "Play Order",IDC_STATIC,14,101,65,76
+    LTEXT           "Hiragana",IDC_HIRAGANA,101,137,30,8
+    LTEXT           "English",IDC_ENGLISH,101,156,24,8
+    LTEXT           "What should be the duration between two flash cards ?",IDC_DISPLAY_DURATION,229,148,182,8
+    CONTROL         "",IDC_RICHEDIT2,"RichEdit20W",WS_BORDER | 0x880,148,136,18,12
+    CONTROL         "",IDC_RICHEDIT3,"RichEdit20W",WS_BORDER | 0x880,148,155,18,12
+    GROUPBOX        "Select Skin",IDC_STATIC,14,188,184,31
+    GROUPBOX        "Learning List Selection",IDC_STATIC,14,8,184,82
+    LTEXT           "From",IDC_STATIC,22,68,16,8
+    LTEXT           "To",IDC_STATIC,122,68,10,8
+    LTEXT           "Select range for displaying",IDC_STATIC,22,48,84,8
+    CTEXT           "q",IDC_DELAY_KH,266,78,62,12
+    CTEXT           "q",IDC_DELAY_HE,328,78,62,12
+    CONTROL         "",IDC_DURATION,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,311,179,43,12
+    CONTROL         "",IDC_TRANSPARENCY,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,304,245,65,12
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_SINGLESEL | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,236,34,192,19,WS_EX_ACCEPTFILES
+    GROUPBOX        " Delay and Disp Order",IDC_STATIC,212,8,240,85
+    LTEXT           "Click and Drag to set display order",IDC_STATIC,236,20,108,8
+    GROUPBOX        "Select Display Fields",IDC_STATIC,212,96,240,33
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 316, 32
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_KanjiFlasher_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 457
+        VERTGUIDE, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 25
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "KanjiFlasher Application"
+            VALUE "FileVersion", "1, 0, 0, 2"
+            VALUE "InternalName", "KanjiFlasher"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "KanjiFlasher.EXE"
+            VALUE "ProductName", "KanjiFlasher Application"
+            VALUE "ProductVersion", "1, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About KanjiFlasher..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
