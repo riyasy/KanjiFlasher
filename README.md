@@ -17,7 +17,7 @@ KanjiFlasher is a pure CPP, low resource Kanji Flash Card creator and visualizer
 ## Tech
 
 Kanji Flasher was originally created in 2006 and uses the lowest of system resources.
-Writeen completely in CPP
+Written completely in CPP
 
 ## Building and Running
 Use Visual Studio 2015 or later for building the source code.
